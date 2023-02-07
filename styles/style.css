@@ -9,7 +9,6 @@ body{
     height: 100vh;
     background: url(../images/bg-main-desktop.png) no-repeat;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 18px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -17,21 +16,21 @@ body{
 
 
 .cards{
+    height: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.card{
-    border-top: 100px;
-    height: 250px;
-    width: 40vw;
-    color: hsl(0, 0%, 100%);
-    padding: 10px;
-}
-
 .front{
+    border-top: 10vh;
+    width: 100%;
+    height: 100%;
+    color: hsl(0, 0%, 100%);
     background: url('../images/bg-card-front.png') no-repeat;
+    background-size: contain;
+    padding-left: 1.5%;
     margin-left: 12.5vw;
     display: flex;
     flex-direction: column;
@@ -46,34 +45,42 @@ body{
 }
 
 .num{
-    margin-top: 25px;
-    margin-left: 20px;
-    font-size: 27px;
+    margin-top: 3%;
+    margin-left: 2.5%;
+    width: 100%;
+    font-size: 1.5em;
     letter-spacing: 2px;
+    word-spacing: 10px;
 }
 
 .info{
     display: flex;
-    width: 100%;
-    margin-left: 20px;
-    margin-bottom: 15px;
+    width: 47.5%;
+    margin-left: 2.5%;
     letter-spacing: 1px;
     font-size: 13px;
-    gap: 220px;
+    justify-content: space-between;
 }
 
 .back{
+    border-top: 10vh;
+    width: 100%;
+    height: 100%;
+    color: hsl(0, 0%, 100%);
     margin-left: 17.5vw;
     background: url('../images/bg-card-back.png') no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .back-num{
-    margin-top: 100px;
-    margin-left: 340px;
+    width: 54.5%;
 }
 
 .data{
-    margin-left: 2.5vw;
+    margin-left: 10vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
