@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     height: 100vh;
@@ -14,19 +19,20 @@ body{
 .cards{
     display: flex;
     flex-direction: column;
-    margin-left: 250px;
     gap: 15px;
 }
 
 .card{
     border-top: 100px;
     height: 250px;
-    width: 450px;
+    width: 40vw;
     color: hsl(0, 0%, 100%);
+    padding: 10px;
 }
 
 .front{
     background: url('../images/bg-card-front.png') no-repeat;
+    margin-left: 12.5vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -36,22 +42,92 @@ body{
 .logo{
     height: 45px;
     width: 80px;
+    margin-left: 15px;
+}
+
+.num{
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 27px;
+    letter-spacing: 2px;
 }
 
 .info{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    gap: 220px;
 }
 
 .back{
+    margin-left: 17.5vw;
     background: url('../images/bg-card-back.png') no-repeat;
 }
 
-.form{
-    margin-left: 150px;
+.back-num{
+    margin-top: 100px;
+    margin-left: 340px;
+}
+
+.data{
+    margin-left: 2.5vw;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    height: 400px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expiry{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-expiry{
+    display: flex;
+    gap: 15px;
+}
+
+label{
+    color: hsl(278, 68%, 11%);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+input{
+    height: 45px;
+    padding: 10px;
+    border: 2px solid hsl(270, 3%, 87%);
+    color: hsl(279, 6%, 55%);
+    border-radius: 5px;
+}
+
+.expiry-data{
+    width: 80px;
+}
+
+.submit{
+    padding: 15px;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.submit:hover{
+    cursor: pointer;
 }
 
 .postForm{

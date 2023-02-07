@@ -27,25 +27,38 @@
       </div>
       
       <div class="card back">
-        000
+        <div class="back-num">
+          000
+        </div>
       </div>
     </div>
     
-    <form class="form">
-      <label>Cardholder Name</label>
-      <input type="text" id="" placeholder="e.g. Jane Appleseed">
+    <form class="data">
+      <div class="form name">
+        <label>Cardholder Name</label>
+        <input type="text" id="" placeholder="e.g. Jane Appleseed">
+      </div>
   
-      <label>Card Number</label>
-      <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+      <div class="form number">
+        <label>Card Number</label>
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+      </div>
   
-      <label>Exp. Date (MM/YY)</label>
-      <input type="text" placeholder="MM"> 
-      <input type="text" placeholder="YY">
-  
-      <label>CVC</label>
-      <input type="text" placeholder="e.g. 123">
-  
-      Confirm
+      <div class="expiry">
+        <div class="title">
+          <label>Exp. Date (MM/YY)</label>
+          <label>CVC</label>
+        </div>
+        
+        <div class="form-expiry">
+          <input class="expiry-data" type="text" placeholder="MM"> 
+          <input class="expiry-data" type="text" placeholder="YY">
+          <input type="text" placeholder="e.g. 123">
+        </div>
+      </div>
+      <button class="submit">
+        Confirm
+      </button>
     </form>
   
   
