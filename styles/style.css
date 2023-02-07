@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body{
+    height: 100vh;
+    background: url(../images/bg-main-desktop.png) no-repeat;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    gap: 15px;
+}
+
+.card{
+    border-top: 100px;
+    height: 250px;
+    width: 450px;
+    color: hsl(0, 0%, 100%);
+}
+
+.front{
+    background: url('../images/bg-card-front.png') no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.logo{
+    height: 45px;
+    width: 80px;
+}
+
+.info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.back{
+    background: url('../images/bg-card-back.png') no-repeat;
+}
+
+.form{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.postForm{
+    display: none;
+}
